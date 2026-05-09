@@ -1,8 +1,39 @@
+# --- Python / virtualenv ---
 venv/
 .venv/
-__pycache__/
-*.pyc
-*.pyo
+ENV/
+env/
 .env
-data/
+.env.*
+.python-version
+
+# --- Bytecode / caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- OS / editor ---
 .DS_Store
+.vscode/
+.idea/
+
+# --- Logs / local artifacts ---
+*.log
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Project artifacts ---
+models/
+
+# NOTE:
+# Keep your dataset tracked by default. If you don't want to commit raw data,
+# uncomment the next line.
+# data/.DS_Store
